@@ -1,0 +1,62 @@
+@mixin large-devices {
+  $padding: 6.7vw;
+
+  body header {
+    height: 85px;
+    padding: 0 $padding;
+
+    .logo {
+      gap: 12px;
+
+      img {
+        width: 34px;
+      }
+      h1 {
+        font-size: 1.25rem;
+      }
+    }
+
+    .home-button {
+      display: none;
+    }
+    nav {
+      display: flex;
+    }
+  }
+
+  main {
+    .intro {
+      padding: 0 $padding;
+
+      div:nth-child(1) {
+        padding: 20px 0;
+        h1 {
+          font-size: 2rem;
+        }
+      }
+    }
+
+    .design {
+      padding: 100px $padding 82px;
+    }
+
+    .galery {
+      padding: 55px $padding 47px;
+
+      div {
+        img {
+          width: 27.625vw;
+          height: 35.646vw;
+        }
+      }
+    }
+  }
+
+  body footer {
+    padding: 90px $padding;
+
+    .footer-links {
+      gap: 8vw;
+    }
+  }
+}
